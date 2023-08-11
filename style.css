@@ -1,0 +1,135 @@
+/*
+seletor{
+    propriedade:valor;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'principal';
+    src: url(fonts/tokino.ttf);
+}
+*/
+
+
+body{
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h1{    
+    margin: 0;
+    color: #250055;
+    font-size: 54px;    
+    line-height: 90%;
+    /*font-family: 'principal';*/
+}
+
+h2{
+    margin: 0;
+    color: #666666; /*cor do texto*/
+    font-size: 24px; /*tamanho da fonte*/
+    line-height: 100%; /*altura da linha*/
+}
+
+p{    
+    color: #666666;    
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+
+.header{
+    width: 100%; /*largura*/
+    height: 140px; /*altura*/
+    background-color: #250055;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img{
+    margin-left: 113px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.menu{
+    margin-right: 113px;
+}
+
+.menu a{
+    color: white;
+    margin-left: 100px;
+    text-decoration: none; /*retirar o sublinhado dos links*/
+    font-size: 20px;
+    display: inline-block;
+}
+
+/*ao passar o mouse*/
+.menu a:hover{
+    color: #8d79a8;
+    transform: scale(1.1);
+}
+
+.content{
+    /*width:1140px;*/
+
+    /*margin-left: 113px;
+    margin-right: 113px;
+    margin-top: 80px;
+    margin-bottom: 80px;*/
+
+    margin: 80px 113px; /*outra forma de escrever as margens porém em uma linha*/
+
+
+}
+
+.footer{
+    background-color: #250055;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: #8d79a8;
+    transform: scale(1.1);
+}
+
+/*Alterações para telas de até 900px*/ 
+@media(max-width:900px){
+    .menu a{
+        display: block;
+     }
+}
+
+
+@media(max-width: 700px){
+
+    .header img{
+        margin-left:50px;
+    }
+
+    .menu{
+        margin-right: 50px;
+    }
+    .content{
+        margin: 50px;
+    }
+}
+
+
+/*para impressão*/
+@media print{
+    .menu{
+       display: none; 
+    }
+}
